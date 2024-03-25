@@ -1,0 +1,3 @@
+print("hello world");
+var a = 10;
+var b = a * 42;
