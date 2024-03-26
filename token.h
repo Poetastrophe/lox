@@ -1,10 +1,10 @@
 #ifndef TOKEN_H
 #define TOKEN_H
 
+#include "stdbool.h"
 #include "tokentype.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "stdbool.h"
 
 typedef enum { TYPE_STRING, TYPE_NUMBER } DataType;
 
