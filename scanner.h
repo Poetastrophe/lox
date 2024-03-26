@@ -16,15 +16,15 @@ typedef struct {
   char *buffer;
   int line;
   int column;
-  int error_count;
+  int errorCount;
   ScannerError **errors;
 } Scanner;
 
 typedef struct {
-  size_t scanner_error_count;
-  ScannerError **scanner_errors;
-  size_t token_capacity;
+  size_t errorCount;
+  size_t tokenCapacity;
   Token **tokens;
+  ScannerError **scannerErrors;
 } ScannerResult;
 
 Scanner *scanner_from_file(const char *filename);

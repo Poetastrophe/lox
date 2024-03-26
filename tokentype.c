@@ -16,8 +16,12 @@ char *tokentype_string(TokenType type) {
     return "DOT";
   case MINUS:
     return "MINUS";
+  case MINUSMINUS:
+    return "MINUSMINUS";
   case PLUS:
     return "PLUS";
+  case PLUSPLUS:
+    return "PLUSPLUS";
   case SEMICOLON:
     return "SEMICOLON";
   case SLASH:
