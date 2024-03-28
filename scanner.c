@@ -6,9 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-////////////
-// Static //
-////////////
+// Lækkert med static B) giver tydeligt scope og intent
 
 static ScannerError *scanner_error_init(int line, int column, char *message) {
   ScannerError *error = malloc(sizeof(ScannerError));

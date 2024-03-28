@@ -24,6 +24,10 @@ typedef struct {
   Literal *literal;
 } Token;
 
+/*
+Jeg har det lidt anstrengt med pointers der binder til identifieren (jeg ser identifier og type som forskellige ting), men dette er meget C-kultur af dig at gøre ;)
+*/
+
 Token *token_new(TokenType type, int line, int column, char *lexeme,
                  Literal *literal);
 void token_free(Token *token);
